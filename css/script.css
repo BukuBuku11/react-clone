@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+    --color-primary-bg: rgb(255, 255, 255);
+    --color-secondary-bg: rgb(35, 39, 47, 0.1);
+    --color-button-hover: rgb(23, 59, 81);
+}
+
+body{
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+    background: var(--color-secondary-bg);
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(64, 71, 86);
+    font-weight: 500;
+}
+
+.container{
+    max-width: 1404px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 60px
+}
+
+/* Navigation Bar */
+
+.main-header{
+    background: var(--color-primary-bg);
+}
+
+.main-header .navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#lists-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navbar-links{
+    max-width: fit-content;
+    margin-left: 40px;
+}
+
+.main-header .navbar-links ul li{
+    padding: 10px;
+    margin: 5px;
+    border-radius: 18px;
+}
+
+#moon{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border-radius: 0px; */
+}
+
+#github{
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* border-radius: 100px; */
+}
+
+.main-header .navbar-links ul:nth-child(1) li:hover{
+    background: rgba(130, 136, 147, 0.1);
+}
+/* Search Bar */
+
+.search-bar{
+    width: 700px;
+}
+
+.search-bar-btn{
+    font-family: "Source Code Pro", monospace;
+    width: 780px;
+    background: var(--color-secondary-bg);
+    border-radius: 20px;
+    height: 40px;
+    border-style: hidden;
+    display: flex;
+    cursor: pointer;
+}
+
+.navbar-misc ul{
+    display: flex;
+    margin: 10px;
+}
+
+.search-bar-btn ul:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    padding: 10px;
+}
+
+.search-bar-btn ul:nth-child(1) li{
+    padding: 4px;
+    margin: 2px;
+    color: rgb(153, 161, 179);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.search-bar-btn ul:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 580px;
+    padding: 10px;
+    color: rgb(153, 161, 179);
+}
+
+.search-bar-btn ul:nth-child(2) li{
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+}
+
+#find{
+    color: rgb(153, 161, 179);
+    font-size: 15px;
+}
+
+

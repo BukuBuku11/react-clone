@@ -1162,7 +1162,13 @@ span {
     width: 100vw;
   }
   .search-bar-btn {
-    width: 80vw;
+    width: 60vw;
+  }
+  .lists-nav {
+    width: 30vw;
+  }
+  .navbar-misc {
+    width: 15vw;
   }
 }
 
